@@ -33,12 +33,15 @@ def process_images_and_save():
         if not price == None:
           new_image_path= os.path.join(output_dir, f"{plate_value['plate']}.jpg")
 
+          json_dir = os.path.dirname(json_output_file)
+          relative_image_path = os.path.relpath(new_image_path, start=json_dir)
+
           if not os.path.exists(new_image_path):
             image = Image.open(image_path)
             image.save(new_image_path)
             results.append({
               "plate": plate_value['plate'],
-              "image_file": new_image_path,
+              "image_file": relative_image_path,
               "plate_data": plate_data,
               "price": price
             })
