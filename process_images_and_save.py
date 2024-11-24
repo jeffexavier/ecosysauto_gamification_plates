@@ -49,7 +49,7 @@ def process_images_and_save():
             print(f"Resultados salvos em {json_output_file}")
 
           else:
-            print(f"Placa '{plate_value['plate']}' já analisada com base na imagem {image_path}")
+            print(f"Placa '{plate_value['plate']}' já analisada com base na imagem {image_file}")
 
         else:
           print(f"Não foram encontrados preços para a placa {plate_value['plate']}")

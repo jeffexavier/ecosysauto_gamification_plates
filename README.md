@@ -53,7 +53,7 @@ python process_images_and_save.py
 Se tudo estiver configurado corretamente, você verá mensagens como estas no terminal:
 
 ```
-Placa 'AAA9A99' já analisada com base na imagem F:\ecosys\placas\images\image1.jpg
+Placa 'AAA9A99' já analisada com base na imagem image1.jpg
 Erro: Resposta não contém a chave ''vehicle_version_id'' para a imagem image2.jpg.
 Erro: Resposta não contém a chave ''data'' para a imagem image3.jpg.
 ```
